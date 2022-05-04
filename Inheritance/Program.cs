@@ -34,88 +34,94 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
-            //#region bird
-            //Bird penguin = new Bird()
-            //{
-            //    Legs = 2,
-            //    HasFur = false,
-            //    Color = "black and white, some yellow",
-            //    HasTail = true,
-            //    CanFly = false,
-            //    BeakSize = "small",
-            //    HasWebbedFeet = true,
-            //    WingSpanSize = "short",               
-            //};
-            //Console.WriteLine($" The following are some of the characteristics of a penguin. It has {penguin.Legs} legs." +
-            //    $"\n The penguin is {penguin.Color}. The beak size of the penguin is {penguin.BeakSize}." +
-            //    $"\n The wingspan of the penguin is relatively {penguin.WingSpanSize}. ");
-            //Console.WriteLine("----------------------------------------------------------------------------");
-            //Console.WriteLine("----------------------------------------------------------------------------");
+            #region bird
+            Bird penguin = new Bird()
+            {
+                Legs = 2,
+                HasFur = false,
+                Color = "black and white, some yellow",
+                HasTail = true,
+                CanFly = false,
+                BeakSize = "small",
+                HasWebbedFeet = true,
+                WingSpanSize = "short",
+            };
+            Console.WriteLine($" The following are some of the characteristics of a penguin. It has {penguin.Legs} legs." +
+                $"\n The penguin is {penguin.Color}. The beak size of the penguin is {penguin.BeakSize}." +
+                $"\n The wingspan of the penguin is relatively {penguin.WingSpanSize}. ");
+            Console.WriteLine("----------------------------------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------------------------------");
 
-            //var answer1 = penguin.HasFur;
-            //var answer2 = penguin.HasTail;
-            //var answer3 = penguin.CanFly;
-            //var answer4 = penguin.HasWebbedFeet;
+            var answer1 = penguin.HasFur;
+            var answer2 = penguin.HasTail;
+            var answer3 = penguin.CanFly;
+            var answer4 = penguin.HasWebbedFeet;
 
-            //Console.WriteLine("Time for Penguin trivia!\n All answers are true or false.");
-            ////Question 1
-            //Console.WriteLine("Question 1: Does a penguin have fur?");                        
-            //string userInput1 = Console.ReadLine();
-            //if (userInput1 == "true")
-            //{
-            //    Console.WriteLine($"{answer1}. You are incorrect!");
+            Console.WriteLine("Time for Penguin trivia!\n All answers are true or false.");
+            //Question 1
+            Console.WriteLine("Question 1: Does a penguin have fur?");
+            string userInput1 = Console.ReadLine();
+            if (userInput1 == "true")
+            {
+                Console.WriteLine($" The correct answer is {answer1}. You are incorrect!");
 
-            //}
-            //else if (userInput1 == "false")
-            //{
-            //    Console.WriteLine("You are correct!");
-            //}
-            //Console.WriteLine();
+            }
+            else if (userInput1 == "false")
+            {
+                Console.WriteLine("You are correct!");
+            }
+            Console.WriteLine();
 
-            ////Question 2
-            //Console.WriteLine("Question 2: Does a penguin have a tail?");
-            //string userInput2 = Console.ReadLine();
-            //if (userInput2 == "true")
-            //{
-            //    Console.WriteLine("You are correct!");
+            //Question 2
+            Console.WriteLine("Question 2: Does a penguin have a tail?");
+            string userInput2 = Console.ReadLine();
+            if (userInput2 == "true")
+            {
+                Console.WriteLine("You are correct!");
 
-            //}
-            //else if (userInput2 == "false")
-            //{
-            //    Console.WriteLine($"{answer2}. You are incorrect!");
-            //}
-            //Console.WriteLine();
+            }
+            else if (userInput2 == "false")
+            {
+                Console.WriteLine($" The correct answer is {answer2}. You are incorrect!");
+            }
+            Console.WriteLine();
 
-            ////Question 3
-            //Console.WriteLine("Question 3: Can a penguin fly?");
-            //string userInput3 = Console.ReadLine();
-            //if (userInput3 == "true")
-            //{
-            //    Console.WriteLine($"{answer3}. You are incorrect!");
+            //Question 3
+            Console.WriteLine("Question 3: Can a penguin fly?");
+            string userInput3 = Console.ReadLine();
+            if (userInput3 == "true")
+            {
+                Console.WriteLine($" The correct answer is {answer3}. You are incorrect!");
 
-            //}
-            //else if (userInput3 == "false")
-            //{
-            //    Console.WriteLine("You are correct");
-            //}
-            //Console.WriteLine();
+            }
+            else if (userInput3 == "false")
+            {
+                Console.WriteLine("You are correct");
+            }
+            Console.WriteLine();
 
-            ////Question 4
-            //Console.WriteLine("Question 4: Does a penguin have webbed feet");
-            //string userInput4 = Console.ReadLine();
-            //if (userInput4 == "true")
-            //{
-            //    Console.WriteLine("You are correct!");
+            //Question 4
+            Console.WriteLine("Question 4: Does a penguin have webbed feet");
+            string userInput4 = Console.ReadLine();
+            if (userInput4 == "true")
+            {
+                Console.WriteLine("You are correct!");
 
-            //}
-            //else if (userInput4 == "false")
-            //{
-            //    Console.WriteLine($"{answer4}. You are incorrect!");
-            //}
-            //Console.WriteLine();
-            //Console.WriteLine("This is the end of penguin trivia. Thank you for participating!");
-            //#endregion bird 
+            }
+            else if (userInput4 == "false")
+            {
+                Console.WriteLine($" The correct answer is {answer4}. You are incorrect!");
+            }
+            Console.WriteLine();
+            Console.WriteLine("This is the end of penguin trivia. Thank you for participating!");
+            #endregion bird 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
 
+
+
+            #region reptile
             Reptile snake = new Reptile()
             {
                 Color = "can very depending on type",
@@ -124,8 +130,8 @@ namespace Inheritance
                 LaysEggs = true,
                 ShedsSkin = true,
             };
-            Console.WriteLine($" The following are some characteristics of a reptile,specifically a snake.\n" +
-                $"\n It has {snake.Legs} legs. The color of a snake {snake.Color}.\n" +
+            Console.WriteLine($" The following are some characteristics of a reptile, specifically a snake.\n" +
+                $"\n It has {snake.Legs} legs. \n The color of a snake {snake.Color}." +
                 $"\n Is a snake coldblooded? {snake.ColdBlooded}." +
                 $"\n Does a snake have scales? {snake.Scales}.");
             Console.WriteLine("----------------------------------------------------------------------------");
@@ -142,7 +148,7 @@ namespace Inheritance
             string userInput01 = Console.ReadLine();
             if (userInput01 == "true")
             {
-                Console.WriteLine($"{answer01}. You are incorrect!");
+                Console.WriteLine($" The correct answer is {answer01}. You are incorrect!");
 
             }
             else if (userInput01 == "false")
@@ -161,7 +167,7 @@ namespace Inheritance
             }
             else if (userInput02 == "false")
             {
-                Console.WriteLine($"{answer02}. You are incorrect!");
+                Console.WriteLine($" The correct answer is {answer02}. You are incorrect!");
             }
             Console.WriteLine();
 
@@ -175,7 +181,7 @@ namespace Inheritance
             }
             else if (userInput03 == "false")
             {
-                Console.WriteLine($"{answer03}. You are incorrect!");
+                Console.WriteLine($" The correct answer is {answer03}. You are incorrect!");
             }
             Console.WriteLine();
 
@@ -189,11 +195,11 @@ namespace Inheritance
             }
             else if (userInput04 == "false")
             {
-                Console.WriteLine($"{answer04}. You are incorrect!");
+                Console.WriteLine($" The correct answer is {answer04}. You are incorrect!");
             }
             Console.WriteLine();
             Console.WriteLine("This is the end of snake trivia. Thank you for participating!");
-
+            #endregion reptile
 
 
 
