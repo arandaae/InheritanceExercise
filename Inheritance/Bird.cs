@@ -8,7 +8,10 @@ namespace Inheritance
     {
         public Bird()
         {
-            
+            Legs = 2;
+            HasFur = false;
+            Color = "black and white, some yellow";
+            HasTail = true; 
         }
 
         public bool CanFly { get; set; }

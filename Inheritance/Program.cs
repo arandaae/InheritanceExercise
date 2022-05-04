@@ -6,6 +6,7 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            #region
             // TODO Be sure to follow best practice when creating your classes
 
             // Create a class Animal
@@ -34,13 +35,11 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            #endregion 
+
             #region bird
             Bird penguin = new Bird()
-            {
-                Legs = 2,
-                HasFur = false,
-                Color = "black and white, some yellow",
-                HasTail = true,
+            {               
                 CanFly = false,
                 BeakSize = "small",
                 HasWebbedFeet = true,
